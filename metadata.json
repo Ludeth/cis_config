@@ -1,0 +1,14 @@
+{
+  "name": "cardinalhealth-cisconfig",
+  "version": "0.1.0",
+  "author": "Edward Shorrock",
+  "summary": "Configure Mac endpoints with CIS CAT Baseline.",
+  "license": "MIT",
+  "source": "GitLab",
+  "project_page": "edward.shorrock@cardinalhealth.com",
+  "issues_url": "edward.shorrock@cardinalhealth.com",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "data_provider": null
+}
