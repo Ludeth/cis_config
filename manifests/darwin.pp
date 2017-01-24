@@ -3,5 +3,5 @@
 #
 
 class cis_config::darwin {
-  include cis_config::darwin::s1_3
+  include cis_config::darwin::section1
 }
