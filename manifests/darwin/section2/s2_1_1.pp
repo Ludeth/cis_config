@@ -8,7 +8,6 @@ class cis_config::darwin::section2::s2_1_1 {
   exec { 'bluetooth-disable-if-none':
     command     => '/usr/bin/killall -HUP blued',
     unless      => "/usr/sbin/system_profiler SPBluetoothDataType | grep -q 'Connected: Yes'",
-    refreshonly => true,
-    subscribe   => Exec['bluetooth-device-check']
+    refreshonly => true
   }
 }
