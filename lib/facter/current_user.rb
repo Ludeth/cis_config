@@ -1,6 +1,6 @@
 # lib/facter/currentuser.rb
 Facter.add('current_user')do
   setcode do
-    "cahsuperior"
+    Facter::Core::Execution.exec('whoami')
   end
 end
