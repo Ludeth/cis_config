@@ -1,6 +1,7 @@
-# lib/facter/currentuser.rb
-Facter.add('current_user')do
+# current_user.rb
+Facter.add('current_user') do
+  confine kernel: 'Darwin'
   setcode do
-    Facter::Core::Execution.exec('whoami')
+    Facter::Util::Resolution.exec('/bin/ls -l /dev/console').split(' ')[2]
   end
 end
