@@ -1,4 +1,7 @@
+#
+# Credit to Graham Gilbert for this fact.
 # current_user.rb
+#
 Facter.add('current_user') do
   confine kernel: 'Darwin'
   setcode do
